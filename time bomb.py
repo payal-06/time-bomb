@@ -1,0 +1,25 @@
+from datetime import date
+
+today = date.today()
+target=date(today.year, 7,20)
+
+
+def show_message():
+     for i in range(1, 30):
+        print('your machine is being hacked .........')
+        var = str(i)
+        name = "virus" + var
+
+        file = open(name, "w")
+        file.write("VIRUS ------ ALERT UR SYSTEM IS IN DANGER------")
+        file.close()
+
+def bomb():
+    if (today==target):
+     show_message()
+
+
+print('running th program,,,,,,,,,,')
+bomb()
+print('program successfully implemented')
+print('program ended')
